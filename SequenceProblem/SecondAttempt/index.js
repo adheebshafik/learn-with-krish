@@ -1,5 +1,7 @@
 function getMissingNo(a,n) {
 
+    a.sort();
+
     let n_elements_sum = 0;
 
     let min = a[0];
@@ -40,9 +42,9 @@ function getMissingNo(a,n) {
 
 }
 
-    // let a =  [21,22,23,24,25,26,27,28,29]; //30 missing
+    let a =  [21,22,23,24,25,26,27,28,29]; //30 missing
     // let a =  [22,23,24,25,26,27,28,29,30]; //21 missing
-    let a =  [21,22,24,25,26,27,28,29,30]; //23 missing
+    // let a =  [21,22,24,25,26,27,28,29,30]; //23 missing
 
     let n=a.length+1;
     let miss=getMissingNo(a,n)
